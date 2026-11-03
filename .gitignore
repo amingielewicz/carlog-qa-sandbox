@@ -22,6 +22,18 @@ allure-results/
 allure-report/
 
 # ==========================================
+# Node / JavaScript
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Pliki środowiskowe (ochrona haseł i kluczy API)
+.env
+.env.local
+
+# ==========================================
 # IDE
 # ==========================================
 # IntelliJ IDEA
