@@ -1,0 +1,30 @@
+:root {
+  /* Tła w ciemnym motywie */
+  --bg-color: #0f172a; /* Głęboki, elegancki grafit/granat tła strony */
+  --card-bg-color: #1e293b; /* Nieco jaśniejszy odcień na kafelki i formularz */
+
+  /* Kolory tekstu */
+  --text-color: #f8fafc; /* Złamana biel (bardzo czytelna, ale nie razi) */
+  --text-muted: #94a3b8; /* Przygaszony szary na etykiety i jednostki */
+
+  /* Akcent i obramowania */
+  --primary-color: #38bdf8; /* Wyrazisty błękit/cyan (dobrze widoczny na ciemnym tle) */
+  --border-color: #334155; /* Dyskretna ramka oddzielająca karty i wiersze */
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
