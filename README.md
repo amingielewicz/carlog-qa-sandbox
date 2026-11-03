@@ -1,2 +1,2 @@
-# ceramic-studio-qa-sandbox
-Wewnętrzny system zarządzania pracownią ceramiczną. Projekt przygotowany pod zaawansowane testy automatyczne E2E.
+# carlog-qa-sandbox
+Domowy dziennik serwisowy i kosztów auta, który pod maską będzie bezwzględnym poligonem testerskim najeżonym pułapkami pod automatyzację (Wait Traps, Shadow DOM, asynchroniczność, znikające toasty i błędy danych).
