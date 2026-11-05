@@ -53,6 +53,11 @@ header nav a:hover {
   color: var(--primary-color);
 }
 
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
 div.metrics-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -168,4 +173,35 @@ div.metrics-grid {
 
 #history tbody tr:hover {
   background-color: rgba(255, 255, 0, 0.03);
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  div.metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #fuel {
+    padding: 1rem;
+  }
+
+  #fuel button {
+    width: 100%;
+  }
 }
