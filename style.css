@@ -76,3 +76,96 @@ div.metrics-grid {
   font-weight: bold;
   color: var(--primary-color);
 }
+
+#fuel {
+  padding: 2rem;
+}
+
+#fuel fieldset {
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--card-bg-color);
+}
+
+#fuel legend {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+#fuel label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+#fuel input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+#fuel input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+#fuel button {
+  background-color: var(--primary-color);
+  color: #0f172a;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+#fuel button:hover {
+  opacity: 0.9;
+}
+
+#history {
+  padding: 2rem;
+}
+
+#history h2 {
+  margin-bottom: 1.5rem;
+}
+
+#history table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#history th,
+#history td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#history thead th {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+#history tfoot td {
+  font-weight: bold;
+  color: var(--text-color);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#history tbody tr:hover {
+  background-color: rgba(255, 255, 0, 0.03);
+}
