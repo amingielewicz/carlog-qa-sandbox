@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CarLog - QA Sandbox & Test Automation</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -23,18 +24,20 @@
 
     <section id="metrics">
       <h2>Kluczowe statystyki</h2>
-      <article>
-        <h3>Średnie spalanie</h3>
-        <p>7,2 l/100 km</p>
-      </article>
-      <article>
-        <h3>Ostatni przebieg</h3>
-        <p>15 000 km</p>
-      </article>
-      <article>
-        <h3>Koszty w tym miesiącu</h3>
-        <p>250 zł</p>
-      </article>
+      <div class="metrics-grid">
+        <article>
+          <h3>Średnie spalanie</h3>
+          <p>7,2 l/100 km</p>
+        </article>
+        <article>
+          <h3>Ostatni przebieg</h3>
+          <p>15 000 km</p>
+        </article>
+        <article>
+          <h3>Koszty w tym miesiącu</h3>
+          <p>250 zł</p>
+        </article>
+      </div>
     </section>
 
     <section id="fuel">
@@ -58,49 +61,52 @@
 
     <section id="history">
       <h2>Historia tankowań i wydatków</h2>
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Data</th>
-            <th scope="col">Przebieg (km)</th>
-            <th scope="col">Litry</th>
-            <th scope="col">Koszt łączny (PLN)</th>
-            <th scope="col">Średnie spalanie (l/100 km)</th>
-          </tr>
-        </thead>
-        <tbody id="fuel-history">
-          <tr>
-            <td>01/10/2026</td>
-            <td>14500</td>
-            <td>45</td>
-            <td>290.00</td>
-            <td>7.1</td>
-          </tr>
-          <tr>
-            <td>15/10/2026</td>
-            <td>15000</td>
-            <td>50</td>
-            <td>325.00</td>
-            <td>7.3</td>
-          </tr>
-          <tr>
-            <td>20/10/2026</td>
-            <td>15500</td>
-            <td>70</td>
-            <td>425.00</td>
-            <td>7.3</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="2">Suma:</td>
-            <td>165 l</td>
-            <td>1040.00 zł</td>
-            <td>-</td>
-          </tr>
-        </tfoot>
-      </table>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Data</th>
+              <th scope="col">Przebieg (km)</th>
+              <th scope="col">Litry</th>
+              <th scope="col">Koszt łączny (PLN)</th>
+              <th scope="col">Średnie spalanie (l/100 km)</th>
+            </tr>
+          </thead>
+          <tbody id="fuel-history">
+            <tr>
+              <td>01/10/2026</td>
+              <td>14500</td>
+              <td>45</td>
+              <td>290.00</td>
+              <td>7.1</td>
+            </tr>
+            <tr>
+              <td>15/10/2026</td>
+              <td>15000</td>
+              <td>50</td>
+              <td>325.00</td>
+              <td>7.3</td>
+            </tr>
+            <tr>
+              <td>20/10/2026</td>
+              <td>15500</td>
+              <td>70</td>
+              <td>425.00</td>
+              <td>7.3</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Suma:</td>
+              <td>165 l</td>
+              <td>1040.00 zł</td>
+              <td>-</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
     </section>
+
 
   </main>
 </body>
